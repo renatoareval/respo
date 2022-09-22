@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste</title>
+</head>
+
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    .cabecalho{
+        background-color: blueviolet;
+    }
+    .lista_link{
+        list-style: none;
+        display: flex;
+    }
+    .titulo_site{
+        width: 100%;
+        max-width: 1200px;
+        margin:0 auto;
+        color: white;
+        padding: 20px 0;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    @media (max-width:700px) {
+        .titulo_site{
+            text-align: center;
+            flex-direction: column;
+        }
+        .lista_link{
+            flex-direction: column;
+        }
+    }
+
+    .link{
+        color: white;
+        text-decoration: none;
+    }
+    .link:hover{
+        border-bottom: 4px white solid;
+    }
+</style>
+<body>
+    <header class="cabecalho">
+        <div class="titulo_site">
+            <h1>Semana do CST ADS</h1>
+            <ul class="lista_link">
+                <li><a href="#" class="link">Inicio</a></li>
+                <li><a href="#" class="link">Inicio</a></li>
+                <li><a href="$" class="link">Inicio</a></li>
+                <li><a href="#" class="link">Inicio</a></li>
+            </ul>
+        </div>
+    </header>
+</body>
+</html>
